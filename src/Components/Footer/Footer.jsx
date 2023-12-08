@@ -1,6 +1,6 @@
 import "./Footer.css";
 const Footer = () => {
-  return (
+  return ( 
     <footer>
       <div className="d-flex justify-content-between w-100 flex-wrap gap-4 footer-wrapper">
         <div className="contact-info">
