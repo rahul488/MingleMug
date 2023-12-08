@@ -1,0 +1,41 @@
+.header-wrapper {
+    position: relative;
+    height: 400px;
+
+}
+
+.header-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/igpyzmbl/d8cde5d2-be4b-4ff7-8f56-7dbc818c1f48.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    background-position: 50% 30%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(95, 156, 235, 0.23) 0px 6px 6px;
+
+}
+
+.header-wrapper::after {
+    content: 'Reserve';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 85%;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}
+
+@media (max-width: 576px) {
+    .header-wrapper::after {
+        font-size: 40px;
+        top: 93%;
+    }
+}

@@ -1,0 +1,222 @@
+.header1 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}
+
+.sub-header {
+    color: #ffa500;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+}
+
+.desc {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 0.9rem;
+    margin-block-end: 0.9rem;
+}
+
+/* Sectio1 css */
+.section1-wrapper {
+    position: relative;
+    height: 600px;
+}
+
+.section1-wrapper::before {
+    content: '';
+    position: absolute;
+    background-image: url('https://media.istockphoto.com/id/928321242/photo/five-colorful-gin-tonic-cocktails-in-wine-glasses-on-bar-counter-in-pup-or-restaurant.jpg?s=612x612&w=0&k=20&c=t9Lx1ouBZbH623AK9dMf5-0TWfkV4Q_1D-fyWl_Qai8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: opacity(0.3);
+}
+
+.section1-wrapper::after {
+    content: 'Menu';
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}
+
+/* Section3 css */
+.cocktails-card,
+.wine-card,
+.bites-card {
+    position: relative;
+    /* flex: 1 1 auto; */
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.wine-card::after,
+.bites-card::after,
+.cocktails-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+    filter: opacity(0.3);
+    transition: transform 0.5s;
+    z-index: 0;
+}
+
+.cocktails-card:hover::after,
+.wine-card:hover::after,
+.bites-card:hover::after {
+    transform: scale(1.1);
+}
+
+
+.cocktails-card::after {
+    background-image: url("https://bar.ingridtemplates.com/wp-content/uploads/sites/22/2021/06/barman-is-making-cocktail-at-night-club-1024x684.jpg");
+}
+
+.wine-card::after {
+    background-image: url("https://bar.ingridtemplates.com/wp-content/uploads/sites/22/2021/06/wine-1024x682.jpg");
+}
+
+.bites-card::after {
+    background-image: url("https://bar.ingridtemplates.com/wp-content/uploads/sites/22/2021/06/charcuterie-board-with-jamon-pork-sausage-with-pepper-fuet-cheese-and-berries-1024x755.jpg");
+}
+
+@keyframes scaleImage {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.cocktails-card::before {
+    content: 'Cocktails';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    z-index: 1;
+}
+
+.wine-card::before {
+    content: 'Wine';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    z-index: 1;
+}
+
+.bites-card::before {
+    content: 'Bites';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    z-index: 1;
+}
+
+/* Section4 css */
+.menus-wrapper {
+    position: relative;
+    min-height: 500px;
+    z-index: 1;
+}
+
+.cocktails-list::after,
+.wine-list::after,
+.bites-list::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: 30% 20%;
+    background-size: cover;
+    height: 100%;
+}
+
+.cocktails-list::after {
+    background-image: url("https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg");
+}
+
+.wine-list::after {
+    background-image: url("https://t4.ftcdn.net/jpg/02/20/89/29/360_F_220892973_6I2RJJ4nkWSwnPHqqiWYmZUwYq1U7o54.jpg");
+}
+
+.bites-list::after {
+    background-image: url("https://www.themealdb.com/images/media/meals/tytyxu1515363282.jpg");
+}
+
+.price-list-title {
+    font-size: 22px;
+    line-height: 1.9em;
+}
+
+.item-desc {
+    font-size: 16px;
+}
+
+@media (max-width: 576px) {
+
+    .cocktails-card::before,
+    .wine-card::before,
+    .bites-card::before {
+        font-size: 20px;
+    }
+
+    .header1 {
+        font-size: 20px;
+    }
+
+    .sub-header {
+        font-size: 15px;
+    }
+}

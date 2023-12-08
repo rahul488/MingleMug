@@ -1,0 +1,15 @@
+body{
+  font-family: 'Kdam Thmor Pro', sans-serif !important;
+  background-color: #000000 !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white !important;
+}
+.modal-content{
+  background-color: #000000 !important;
+  color: white !important;
+}
+.btn-close{
+  background-color: red !important;
+}

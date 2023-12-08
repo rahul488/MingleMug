@@ -1,0 +1,8 @@
+.socal-connect{
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}

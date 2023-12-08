@@ -1,0 +1,37 @@
+.notfound-wraper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.notfound-wraper::before {
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    background-image: url('https://img.freepik.com/free-photo/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai_188544-12370.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: none;
+    background-position: 20% 40%;
+    opacity: 0.5;
+    height: 100%;
+}
+
+.notfound-wraper::after {
+    position: absolute;
+    content: 'Page Not Found 404';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    text-transform: uppercase;
+    color: #b3eb43;
+    font-size: 30px;
+}
+
+.button-wrapper {
+    position: absolute;
+    top: 60%;
+}

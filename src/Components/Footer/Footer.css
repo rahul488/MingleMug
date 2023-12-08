@@ -1,0 +1,21 @@
+footer{
+  margin-top: auto;
+}
+.footer-wrapper {
+  padding: 2rem 10rem;
+  background-color: orangered;
+}
+
+@media (max-width: 720px) {
+  .footer-wrapper {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+  .footer-wrapper {
+    padding: 1rem 1rem;
+    flex-wrap: nowrap !important;
+  }
+}

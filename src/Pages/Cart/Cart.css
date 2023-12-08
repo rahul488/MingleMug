@@ -1,0 +1,39 @@
+@media (max-width: 576px) {
+    .product-wrapper {
+        flex-direction: column;
+    }
+}
+
+.total,
+.subTotal {
+    position: relative;
+    width: 200px;
+}
+
+.total::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: azure;
+}
+
+.price {
+    color: #f00000;
+}
+
+.subTotal::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: azure;
+}
+
+.empty-cart-wrapper {
+    height: 400px;
+}
